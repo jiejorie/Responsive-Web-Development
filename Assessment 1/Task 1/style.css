@@ -10,6 +10,7 @@
     src: url(assets/fonts/JosefinSans-Regular.ttf) format('truetype');
 }
 
+/* media query for small mobiles */
 @media screen and (max-width:539px){
 
     /* General styling */
@@ -141,7 +142,7 @@
     }
 }
 
-
+/* media query for large mobiles */
 @media screen and (min-width:540px) and (max-width:720px){
 
     /* General styling */
@@ -274,7 +275,8 @@
         font-size: 0.95em;
     }
 }
-    
+
+/* media query for tablets  */
 @media screen and (min-width:720px) and (max-width:1023px){
 
     /* General styling */
@@ -427,7 +429,8 @@
         font-size: 1.3em;
     }
 }
-    
+
+/* media query for desktops */
 @media screen and (min-width:1024px){
 
     /* General styles */
@@ -611,4 +614,5 @@
         padding: 2em;
         font-size: 0.85em;
     }
+
 }
