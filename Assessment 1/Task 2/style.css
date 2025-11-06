@@ -1,0 +1,587 @@
+/* imports Teko font */
+@font-face {
+  font-family: 'Teko'; 
+  src: url(assets/fonts/Teko-Regular.ttf) format('truetype'); 
+}
+
+/* imports Lato font */
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+/* mobiles */
+@media screen and (max-width: 719px) {
+
+    /* General styles */
+    body {
+        margin: 0; /* avoids unnecessary outer margins */
+        background-color: #070410; /* sets body bg color */
+        background-image: linear-gradient(to top, #23165181, #070410, #2316517c); /* creates a linear gradient in the backgorund */
+    }
+
+
+
+    /* header and nav styles */
+    /* sets nav item placement using flex */
+    header nav {
+        display: flex;
+        justify-content: space-between; /* places items at the very edge with leftover space in between */
+        gap: 48px;
+        box-shadow: 0 5px 50px #070410; /* adds box shadow underneath nav */
+    }
+
+    header nav ul {
+        display: none; /* hides navigation links */
+    }
+
+    /* styles search input */
+    header nav input {
+        margin: 16px;
+        padding: 0 16px;
+        border-radius: 16px;
+        font-family: "Lato", sans-serif;
+        background-color: #070410;
+        border: none;
+        color: #ffffff;
+    }
+
+    header nav input::placeholder {
+        color: #ffffff; /* styles placeholder text to white */
+    }
+
+    /* styles watch.it logo in nav bar */
+    header nav h1 {
+        font-family: "Teko", sans-serif;
+        margin: 16px;
+        font-size: 2em;
+        color: #eef36a;
+    }
+
+
+
+    /* main content styles */
+    /* contains main content into one column only */
+    main {
+        max-width: 900px; /* the widest width is 900px */
+        margin: 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px;
+    }
+
+    /* styles film container with bg color, box shadow, border-radius, and grid */
+    .film-container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "image"
+        "details";
+        background-color: #231651;
+        box-shadow: 0 10px 5px #070410;
+        border-radius: 16px;
+    }
+
+    /* changes color of bg and shadow in film container when hovered */
+    .film-container:hover{
+        background-color: #2b1b64;
+        box-shadow: 0 10px 5px #4dccbdcc;
+    }
+    
+    /* ensures all movie posters maintain original aspect ratio and fill the entire div container */
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    
+    img:hover {
+        filter:brightness(115%); /* brightens movie poster when hovered */
+    }
+
+    .film-img {
+        grid-area: image; /* assigns grid area as image */
+    }
+
+    /* assigns grid area as details and follows flex display */
+    .details {
+        grid-area: details;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* places each item at the edge with leftover space in between items only */
+        margin: 16px;
+    }
+
+    /* creates grid placement for text details */
+    .details .text {
+        display: grid;
+        grid-template-columns: none;
+        grid-row: repeat(2, auto);
+        row-gap: 16px;
+    }
+
+    /* styles movie titles */
+    .details h2 {
+        margin: 16px 16px 0 16px;
+        padding: 16px 16px 0 16px;
+        font-size: 3em;
+        font-family: "Teko", sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    /* styles movie description */
+    .details p {
+        margin: 0 16px 16px 16px;
+        padding: 0 16px 16px 16px;
+        font-size: 1.5em;
+        font-family: "Lato", sans-serif;
+        line-height: 1.5em;
+        color: #ffffff;
+    }
+
+    /* styles buttons */
+    .details button {
+        transition: ease-in 0.2s;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 16px;
+        font-size: 2em;
+        font-family: "Teko", sans-serif;
+        background-color: #eef36a;
+        font-weight: bold;
+        color: #070410;
+        border: none;
+    }
+
+    /* brightens buttons when hovered */
+    .details button:hover {
+        background-color: #4dccbd;
+        color: #ffffff;
+    }
+
+}
+
+/* tablets */
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+
+    /* General styling */
+    body {
+        margin: 0; /* avoids unnecessary margins */
+        background-color: #070410; /* sets body bg color */
+        background-image: linear-gradient(to top, #23165181, #070410, #2316517c); /* creates a linear gradient in the background */
+    }
+
+
+
+    /* header and nav styles */
+    /* sets nav item placement using flex */
+    header nav {
+        display: flex;
+        justify-content: space-between; /* places items at the very edge with leftover space in between */
+        gap: 16px;
+        box-shadow: 0 5px 50px #070410; /* adds box shadow underneath nav */
+    }
+
+    /* vertically centers navigation links using flex */
+    header nav ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    header nav ul li {
+        list-style-type: none; /* removes bullet points */
+        
+    }
+
+    /* styles anchor tags within the navbar */
+    header nav ul li a {
+        transition: ease 0.25s;
+        text-decoration: none; /* removes underline beneath anchor tag */
+        font-family: "Lato", sans-serif;
+        color: #ffffff;
+    }
+
+    /* adds hover styling to anchor tags in navbar */
+    header nav ul li a:hover {
+        text-decoration: underline; /* adds underline beneath anchor tag */
+        text-underline-offset: 10px;
+        color: #4dccbd; /* changes color */
+    }
+
+    /* styles search bar in nav bar */
+    header nav input {
+        margin: 16px;
+        padding: 0 16px;
+        border-radius: 16px;
+        font-family: "Lato", sans-serif;
+        background-color: #070410;
+        border: none;
+        color: #ffffff;
+    }
+
+    header nav input::placeholder {
+        color: #ffffff; /* sets placeholder text to be white */
+    }
+
+    /* styles watch.it logo in navbar */
+    header nav h1 {
+        font-family: "Teko", sans-serif;
+        margin: 16px;
+        font-size: 3em;
+        color: #eef36a;
+    }
+
+
+
+    /* main content styles */
+    /* creates a 2 row, 2 column grid for the main content layout */
+    main {
+        max-width: 900px;
+        margin: 32px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-gap: 32px;
+    }
+
+    /* styles each container and places each element in a 1 column grid */
+    .film-container {
+        background-color: #231651;
+        box-shadow: 10px 10px 5px #070410;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "image"
+        "details";
+    }
+
+    /* brightens film container and box shadow when hovered */
+    .film-container:hover{
+        background-color: #2b1b64;
+        box-shadow: 10 10px 5px #4dccbdcc;
+    }
+    
+    /* ensures each movie poster maintains the original aspect ratio while filling the whole film image div */
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    img:hover {
+        filter:brightness(115%); /* brightens movie poster when hovered */
+    }
+
+    .film-img {
+        grid-area: image; /* sets grid area as image */
+    }
+
+    /* sets grid area as details and follows flexbox placement */
+    .details {
+        grid-area: details;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* leaves leftover space between items evenly */
+        margin: 16px;
+    }
+
+    /* creates 2 rows using grid for the text details in the film container */
+    .details .text {
+        display: grid;
+        grid-template-columns: none;
+        grid-row: repeat(2, auto);
+        row-gap: 16px;
+    }
+
+    /* styles movie title */
+    .details h2 {
+        margin: 16px 16px 0 16px;
+        padding: 16px 16px 0 16px;
+        font-size: 3em;
+        font-family: "Teko", sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    /* styles movie description */
+    .details p {
+        margin: 0 16px 16px 16px;
+        padding: 0 16px 16px 16px;
+        font-size: 1.5em;
+        font-family: "Lato", sans-serif;
+        line-height: 1.5em;
+        color: #ffffff;
+    }
+
+    /* styles watch now button */
+    .details button {
+        transition: ease-in 0.2s;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 16px;
+        font-size: 2em;
+        font-family: "Teko", sans-serif;
+        background-color: #eef36a;
+        font-weight: bold;
+        color: #070410;
+        border: none;
+    }
+
+    /* brightens button when hovered */
+    .details button:hover {
+        background-color: #4dccbd;
+        color: #ffffff;
+    }
+}
+
+/* desktops */
+@media screen and (min-width: 1024px) {
+
+    /* General styles */
+    body {
+        margin: 0;
+        background-color: #070410; /* sets body bg color */
+        background-image: linear-gradient(to top, #23165181, #070410, #2316517c); /* creates a linear gradient in the background */
+    }
+
+
+
+    /* header and nav styles */
+    /* sets nav item placement using flex */
+    header nav {
+        display: flex;
+        justify-content: space-between; /* places items at the very edge with leftover space in between */
+        box-shadow: 0 5px 50px #070410; /* adds box shadow underneath nav */
+    }
+
+    /* vertically centers nav links using flex */
+    header nav ul {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    header nav ul li {
+        list-style-type: none; /* removes bullet points */
+        
+    }
+
+    /* styles anchor tags within nav bar */
+    header nav ul li a {
+        transition: ease 0.25s;
+        text-decoration: none; /* removes underline beneath anchor tag */
+        font-family: "Lato", sans-serif;
+        font-size: 1.5em;
+        color: #ffffff; 
+    }
+
+    /* adds hover styling to anchor tags in navbar */
+    header nav ul li a:hover {
+        text-decoration: underline; /* adds underline beneath anchor tag */
+        text-underline-offset: 10px;
+        color: #4dccbd; /* changes color */
+    }
+
+    /* styles search bar in nav bar */
+    header nav input {
+        margin: 16px;
+        padding: 0 16px;
+        border-radius: 16px;
+        font-family: "Lato", sans-serif;
+        background-color: #070410;
+        border: none;
+        color: #ffffff;
+    }
+
+    header nav input::placeholder {
+        color: #ffffff; /* sets placeholder text to be white */
+    }
+
+    /* styles watch.it logo in navbar */
+    header nav h1 {
+        font-family: "Teko", sans-serif;
+        margin: 16px;
+        font-size: 3em;
+        color: #eef36a;
+    }
+
+
+
+    /* main content styles */
+    /* creates a grid for the main content layout */
+    main {
+        max-width: 900px;
+        margin: 48px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 48px;
+    }
+
+    /* styles film container */
+    .film-container {
+        background-color: #231651;
+        box-shadow: 10px 10px 5px #070410;
+        border-radius: 16px;
+    }
+
+    /* brightens film container when hovered */
+    .film-container:hover{
+        background-color: #2b1b64;
+        box-shadow: 10px 10px 5px #4dccbdcc;
+    }
+    
+    /* assigns grid area and creates an inner grid for item placement for film 1*/
+    #film1 {
+        grid-area: 1/1/2/3;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "image"
+        "details";
+    }
+
+    /* creates a grid for a horizontal text and button placement */
+    #film1 .details {
+        display: grid;
+        grid-template-columns: 3.8fr 1fr;
+        grid-template-rows: none;
+        grid-template-areas: /* layout for film container */
+        "text button";
+    }
+    
+    #film1 .details button {
+        grid-area: button; /* assigns film 1 grid area as button */
+    }
+
+    #film1 .details .text{
+        grid-area: text; /* assigns film 1 grid area as text */
+    }
+
+    /* sizes film 1 image */
+    #film1 img {
+        width: 100%;
+        max-height: 45em;
+        object-fit: cover;
+    }
+    
+    #film2 {
+        grid-area: 2/1/3/2; /* assigns grid area for film 2 */
+    }
+
+    #film3 {
+        grid-area: 2/2/3/3; /* assigns grid area for film 3 */
+    }
+
+    /* creates grid layout for films 2 and 3 */
+    #film2, #film3 {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "image"
+        "details";
+    }
+    
+    #film4 {
+        grid-area: 3/1/4/3; /* assigns grid area for film 4 */
+    }
+
+    #film5 {
+        grid-area: 4/1/5/3; /* assigns grid area for film 5 */
+    }
+    #film6 {
+        grid-area: 5/1/6/3; /* assigns grid area for film 6 */
+    }
+
+    /* defines grid layout for films 4, 5, and 6 */
+    #film4, #film5, #film6 {
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-areas: 
+        "image details";
+    }
+
+    /* ensures movie posters maintain original aspect ratio */
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px; /* rounds edges */
+    }
+
+    img:hover {
+        filter:brightness(115%); /* brightens movie poster when hovered */
+    }
+
+    .film-img {
+        grid-area: image; /* assigns grid area as image */
+    }
+
+    /* uses flexbox placement for the texts within the details */
+    .details {
+        grid-area: details; /* assigns grid area as details */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* leaves leftover space in between items evenly */
+        margin: 16px;
+    }
+
+    /* creates grid layout for all film texts except for film 1 into 1 column and 2 rows */
+    .details .text {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: repeat(2, auto);
+        row-gap: 16px;
+    }
+
+    /* styles movie titles */
+    .details .text h2 {
+        margin: 16px 16px 0 16px;
+        padding: 16px 16px 0 16px;
+        font-size: 3em;
+        font-family: "Teko", sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    /* styles movie description */
+    .details .text p {
+        margin: 0 16px 16px 16px;
+        padding: 0 16px 16px 16px;
+        font-size: 1.5em;
+        font-family: "Lato", sans-serif;
+        line-height: 1.3em;
+        color: #ffffff;
+    }
+
+    /* styles watch it button */
+    .details button {
+        transition: ease-in 0.2s;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 16px;
+        font-size: 2em;
+        font-family: "Teko", sans-serif;
+        background-color: #eef36a;
+        font-weight: bold;
+        color: #070410;
+        border: none;
+    }
+
+    /* brightens button when hovered */
+    .details button:hover {
+        background-color: #4dccbd;
+        color: #ffffff;
+    }
+}
