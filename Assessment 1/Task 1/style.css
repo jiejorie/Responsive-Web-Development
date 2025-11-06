@@ -1,0 +1,614 @@
+/* imports Protest Guerrilla font */
+@font-face {
+  font-family: 'Protest Guerrilla'; 
+  src: url(assets/fonts/ProtestGuerrilla-Regular.ttf) format('truetype'); 
+}
+
+/* imports Josefin Sans font */
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(assets/fonts/JosefinSans-Regular.ttf) format('truetype');
+}
+
+@media screen and (max-width:539px){
+
+    /* General styling */
+    body {
+        background-color: #e9e9e9; /* sets body bg color */
+        margin: 0; /* ensures no outer margins are visible in the body */
+    }
+    
+    /* styles all h2 tag texts */
+    h2 {
+        font-size: 3.3em; /* 3 times bigger than p tag font-size */
+        font-family: 'Protest Guerrilla', sans-serif;
+        text-align: center;
+    }
+
+    /* styles all p tag texts */
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.1em; /* 3 times smaller than heading font-sizes */
+        line-height: 1.5em;
+    }
+
+
+
+    /* header and nav styles */
+    header {
+        background-color: #e9e9e9; /* sets background color */
+    }
+
+    /* defines size and centers the logo */
+    #logo {
+        width: 80px;
+        display: block;
+        margin: 12px auto 12px auto;
+    }
+
+    /* centers and adds spacing to navigation links */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 2.5em;
+        padding: 12px;
+    }
+
+    nav ul li { 
+        list-style-type: none; /* removes bullet point symbols */
+    }
+
+    /* styles text for navigation links */
+    nav ul li a {
+        text-decoration: none; /* removes underline under nav links */
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    /* styles h1 tag text in the first paragraph */
+    .first-paragraph h1 {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-size: 3.3em;
+        text-align: center;
+    }
+
+    .first-paragraph, .column-text {
+        background-color: white; /* sets the content's bg color as white */
+        padding: 12px 12px 0 12px; /* adds 12px spacing on the sides and top of these sections */
+        display: grid;
+        grid-template-columns: 1fr; /* restricts to one column only */
+    }
+
+
+
+    /* album styles */
+    /* contains albums into one column without 12px spacing */
+    .albums {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #featured-album {
+        display: none; /* hides featured album */
+    }
+
+    /* ensures images uses original ratio and fills whole div space */
+    #album1 img, #album2 img, #album3 img, #album4 img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #album1 {
+        border-top: 3px solid #f5f5f5; /* adds a top border on album 1 */
+    }
+
+
+
+    /* footer styles */
+    footer {
+        background-color: #14181d; /* sets footer bg color */
+        color: whitesmoke; /* sets text color */
+    }
+
+    /* creates grid format for footer details */
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        padding: 12px;
+    }
+
+    .profile {
+        justify-self: center; /* horizontally centers profile within grid container */
+    }
+
+    /* rounds the author image and a adds border*/
+    .profile img{
+        border-radius: 150px;
+        border: 5px solid white;
+    }
+
+    /* styles the copyright text */
+    #copy-right {
+        margin: auto;
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+
+@media screen and (min-width:540px) and (max-width:720px){
+
+    /* General styling */
+    body {
+        background-color: #e9e9e9; /* sets body's bg color */
+        margin: 0; /* ensures no outer margins are seen in the body */
+    }
+    
+    /* styles all h2 tag texts */
+    h2 {
+        font-size: 3.5em; /* 3 times bigger than p tag texts */
+        font-family: 'Protest Guerrilla', sans-serif;
+        text-align: center;
+    }
+
+    /* syles all p tag texts */
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.16em; /* 3 times smaller than heading texts */
+        line-height: 1.5em;
+    }
+
+
+
+    /* header and nav styling */
+    header {
+        background-color: #e9e9e9; /* sets header bg color */
+    }
+
+    /* centers logo image */
+    #logo {
+        width: 80px;
+        display: block;
+        margin: 20px auto 20px auto;
+    }
+
+    /* centers navigation links and adds spacing */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 5em;
+        padding: 20px;
+    }
+
+    nav ul li { 
+        list-style-type: none; /* removes bullet points */
+    }
+
+    /* styles text for navigation links */
+    nav ul li a {
+        text-decoration: none; /* removes underline beneath anchor tag text */
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.16em; /* 3 times smaller than h2 tag */
+        font-weight: bold;
+    }
+
+    /* styles h1 tag text in the first paragraph */
+    .first-paragraph h1 {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    /* creates one column to contain the first paragraph and column text with 20px top and side spacing */
+    .first-paragraph, .column-text {
+        background-color: white; /* sets content bg color to white */
+        padding: 20px 20px 0 20px; 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* album styling */
+    /* creates one column to contain album images without 20px spacing */
+    .albums {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* ensures images respect original aspect ratio and fills the whole div container */
+    .albums img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #featured-album {
+        display: none; /* hides featured album image */
+    }
+    
+    #album1 {
+        border-top: 3px solid #f5f5f5; /* adds top border */
+    }
+
+
+
+    /* footer styling*/
+    footer {
+        background-color: #14181d; /* sets footer bg color */
+        color: whitesmoke; /* sets footer text color */
+    }
+
+    /* contains footer details into 2 rows */
+    .footer-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        padding: 20px;
+    }
+
+    .profile {
+        justify-self: center; /* horizontally centers author's profile image */
+    }
+
+    /* rounds edges and adds white border to author's profile image */
+    .profile img{
+        border-radius: 150px;
+        border: 5px solid white;
+    }
+
+    /* styles copyright information */
+    #copy-right {
+        margin: auto;
+        text-align: center;
+        padding: 1.5em;
+        font-size: 0.95em;
+    }
+}
+    
+@media screen and (min-width:720px) and (max-width:1023px){
+
+    /* General styling */
+    body {
+        background-color: #e9e9e9; /* sets body bg color */
+        margin: 0; /* ensures no outer margins are visible in the body */
+    }
+    
+    /* styles h2 tag texts */
+    h2 {
+        font-size: 5em; /* 3 times bigger than p tag text */
+        font-family: 'Protest Guerrilla', sans-serif;
+        text-align: center;
+    }
+
+    /* styles p tag texts */
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.67em; /* 3 times smaller than heading texts*/
+        line-height: 30px;
+    }
+
+
+
+
+    /* header and nav styles */
+    header {
+        background-color: #e9e9e9; /* sets header bg color */
+    }
+
+    /* sizes and centers logo image */
+    #logo {
+        width: 80px;
+        display: block;
+        margin: 30px auto 30px auto;
+    }
+
+    /* centers navigation links */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 5em;
+        padding: 30px;
+    }
+
+    nav ul li { 
+        list-style-type: none; /* removes bullet points */
+    }
+
+    /* styles text for anchor tags within the nav */
+    nav ul li a {
+        text-decoration: none; /* removes underline beneath anchor tag */
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.67em; /* 3 times smaller than heading font-sizes */
+        font-weight: bold;
+    }
+
+    /* styles and centers h1 tag text in the first paragraph */
+    .first-paragraph h1 {
+        font-size: 5em; /* 3 times bigger than p tag text */
+        font-family: "Protest Guerrilla", sans-serif;
+        text-align: center;
+    }
+
+    /* contains the first paragraph and the column texts into 1 column with 30px side spacing */
+    .first-paragraph, .column-text {
+        background-color: #ffffff;
+        padding: 0 30px 0 30px;
+        margin: 0 30px 0 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* album styles */
+    /* creates 2 row, 2 column grid for album images with 30px side spacing */
+    .albums {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 30px;
+    }
+
+    /* ensures album images respect original aspect ratio and fills the whole div container */
+    .albums img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #featured-album {
+        display: none; /* hides featured album image */
+    }
+
+    #album1 {
+        border-top: 3px solid #f5f5f5; /* adds a top border */
+    }
+
+    #album4 {
+        border-right: 3px solid #ffffff; /* adds a right border */
+    }
+
+
+
+    /* footer styles */
+    footer {
+        margin: 0;
+        background-color: #14181d; /* sets footer bg color */
+        color: whitesmoke; /* sets footer text color */
+        margin: 0 30px;
+    }
+
+    /* cotains author profile and details into 2 columns */
+    .footer-details {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: none;
+        padding: 30px;
+        column-gap: 30px;
+    }
+
+    /* assigns grid area within footer details grid and centers itself within container */
+    .profile {
+        grid-area: 1/2/3/2;
+        align-self: center;
+    }
+
+    /* rounds edges and adds a border to the author's profile image */
+    .profile img{
+        border-radius: 100px;
+        border: 5px solid white;
+    }
+
+    .author-details {
+        grid-area: 1/1/2/2; /* assigns grid area within the footer details */
+    }
+    
+    .author-details h2 {
+        text-align: center; /* centers text */
+    }
+
+    /* styles copyright information */
+    #copy-right {
+        margin: auto;
+        text-align: center;
+        padding: 30px;
+        font-size: 1.3em;
+    }
+}
+    
+@media screen and (min-width:1024px){
+
+    /* General styles */
+    /* adds outer side spacing and padding, and sets body bg color */
+    body {
+        margin: 0px 50px 0 50px; 
+        padding: 0 50px;
+        background-color: #e9e9e9;
+    }
+
+    /* styles h2 tag texts */
+    h2 {
+        font-size: 3em; /* 3 times bigger than p tag font-size */
+        font-family: 'Protest Guerrilla', sans-serif;
+    }
+
+    /* styles p tag texts*/
+    p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1em; /* 3 times smaller than heading font-sizes */
+        line-height: 1.5em;
+    }
+
+
+
+    /* header and nav styles */
+    header {
+        background-color: #e9e9e9; /* sets header bg color */
+        margin: 0;
+    }
+
+    /* centers logo image */
+    #logo {
+        display: block;
+        margin: auto;
+        padding: 0 50px;
+    }
+
+    /* centers navigation links using flex */
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 10em;
+        padding: 50px;
+    }
+
+    nav ul li { 
+        list-style-type: none; /* removes bullet points */
+    }
+
+    nav ul li a {
+        text-decoration: none; /* removes underline beneath anchor tags within the navbar */
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1em; /* 3 times smaller than headings */
+        font-weight: bold;
+    }
+
+
+
+    /* wraps around main content to add a border effect */
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 50px;
+        max-width: 100em;
+    }
+
+
+
+    /* main content styles */
+    main {
+        background-color: #ffffff; /* sets content bg color to white */
+        margin: 0 50px;
+    }
+
+    .large-text {
+        font-size: 8.5rem; /* enlarges text */
+    }
+
+    .first-paragraph {
+        margin: 0 50px; /* adds margin spacing */
+    }
+
+    /* styles the whole h1 tag text within the first paragraph*/
+    .first-paragraph h1 {
+        font-family: 'Protest Guerrilla', sans-serif;
+        margin: 0 15% 0 0; /* adds a right margin */
+        padding-top: 50px;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    /* styles first paragraph p tags */
+    .first-paragraph p{
+        font-size: 1.3em; /* slightly larger text than p tag font-size */
+        margin-right: 30%; /* adds a right margin */
+        line-height: 2em;
+    }
+
+    /* divides text into 3 columns */
+    .column-text {
+        column-count: 3;
+        margin: 50px;
+    }
+
+
+
+    /* album styles */
+    /* contains album images into 4 columns and 2 rows */
+    .albums {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    #featured-album {
+        grid-area: 1/1/3/3; /* assigns grid area to the featured album image */
+    }
+
+    /* ensures all album images respect original aspect ratio and fills entire div container */
+    .albums img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #album1 {
+        border-top: 2px solid #f5f5f5; /* adds a top border */
+    }
+
+    #album4 {
+        border-right: 2px solid #f5f5f5; /* adds a right border */
+    }
+
+
+
+    /* footer styles */
+    footer {
+        margin: 0 50px 0 50px;
+        background-color: #14181d; /* sets footer bg color */
+        color: whitesmoke; /* sets footer text color */
+    }
+
+    /* contains footer details into 2 columns */
+    .footer-details {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: none;
+        padding: 50px;
+        column-gap: 50px;
+    }
+
+    /* assigns grid area and vertically centers author's profile image */
+    .profile {
+        grid-area: 1/2/3/2;
+        align-self: center;
+    }
+
+    /* rounds edges and adds border to profile image */
+    .profile img{
+        border-radius: 150px;
+        border: 5px solid white;
+    }
+
+    /* assigns grid area to text for author details */
+    .author-details {
+        grid-area: 1/1/2/2;
+    }
+
+    /* styles h2 text in author details */
+    .author-details h2 {
+        text-align: center;
+        color: white;
+    }
+
+    /* styles copyright information */
+    #copy-right {
+        margin: auto;
+        text-align: center;
+        padding: 2em;
+        font-size: 0.85em;
+    }
+}
