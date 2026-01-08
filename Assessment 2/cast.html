@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/icons/Logo.ico" type="image/x-icon">
     <title>• Cast</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="assets/images/ALNST_Logo.png" alt="Alien Stage Logo" class="header-bg">
+            <img src="assets/images/icons/ALNST_Logo.png" alt="Alien Stage Logo">
             <button type="button" class="watch-Btn" id="watch-yt1">
-                    <a
-                        href="https://youtube.com/playlist?list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&si=KNCjxF_dGgh8bD0a"
-                        target="_blank">
-                        WATCH ON YOUTUBE
-                    </a>
+                <a
+                    href="https://youtube.com/playlist?list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&si=KNCjxF_dGgh8bD0a"
+                    target="_blank">
+                    WATCH ON YOUTUBE
+                </a>
             </button>
             <div class="main-menu">
-                <button type="button" class="menu-Btn" onclick=""><img src="assets/images/icons/menu.png" alt="menu"
-                        height="30px"></button>
-                <button type="button" class="close-Btn" onclick=""><img src="assets/images/icons/close.png" alt="close"
-                        height="30px"></button>
-                <ul>
+                <button type="button" class="menu-Btn" onclick="openMenu()"><img src="assets/images/icons/menu.png" alt="menu"
+                        height=30px></button>
+                <button type="button" class="close-Btn" onclick="closeMenu()"><img src="assets/images/icons/close.png" alt="close"
+                        height=30px></button>
+                <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="creators.html">CREATORS</a></li>
-                    <li><a href="index.html#about-contents">ABOUT</a></li>
-                    <li><a href="index.html#all-rounds">SONGS</a></li>
+                    <li><a href="index.html#about-contents" onclick="closeMenu()">ABOUT</a></li>
+                    <li><a href="index.html#all-rounds" onclick="closeMenu()">SONGS</a></li>
                     <li><a href="cast.html">CAST</a></li>
                     <li><a target="_blank" href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
                 </ul>
             </div>
         </nav>
         <div class="image-overlay-cont">
-            <img src="assets/images/display/phoneHeader1.png" alt="Alien Stage Background" class="header-bg">
-            <div class="overlay-text">
+            <div class="overlay-text3">
                 <h1>CAST</h1>
+            </div>
         </div>
     </header>
     <main>
-        <section>
+        <section id="va-contents">
             <h2>BEHIND THE VOICES</h2>
             <div class="voice-actors">
-                <div id="va1">
-                    <img src="assets/images/profile/Sua-profile.png" alt="Sua">
+                <div class="va-char" id="va1">
+                    <img src="assets/images/voice_actors/Sua-profile.png" alt="Sua">
                     <h3>SUA</h3>
                     <p>VOICED BY C!NAH</p>
                 </div>
-                <div id="va2">
-                    <img src="assets/images/profile/Mizi-profile.png" alt="Mizi">
+                <div class="va-char" id="va2">
+                    <img src="assets/images/voice_actors/Mizi-profile.png" alt="Mizi">
                     <h3>MIZI</h3>
                     <p>VOICED BY RUBYEYE</p>
                 </div>
-                <div id="va3">
-                    <img src="assets/images/profile/Till-profile.png" alt="Till">
+                <div class="va-char" id="va3">
+                    <img src="assets/images/voice_actors/Till-profile.png" alt="Till">
                     <h3>TILL</h3>
                     <p>VOICED BY AKUGETSU</p>
                 </div>
-                <div id="va4">
-                    <img src="assets/images/profile/Ivan-profile.png" alt="Ivan">
+                <div class="va-char" id="va4">
+                    <img src="assets/images/voice_actors/Ivan-profile.png" alt="Ivan">
                     <h3>IVAN</h3>
                     <p>VOICED BY PARK BYEONG HOON</p>
                 </div>
-                <div id="va5">
-                    <img src="assets/images/profile/Luka-profile.png" alt="Luka">
+                <div class="va-char" id="va5">
+                    <img src="assets/images/voice_actors/Luka-profile.png" alt="Luka">
                     <h3>LUKA</h3>
                     <p>VOICED BY BL8M</p>
                 </div>
-                <div id="va6">
-                    <img src="assets/images/profile/Hyuna-profile.png" alt="Hyuna">
-                    <h3>IVAN</h3>
+                <div class="va-char" id="va6">
+                    <img src="assets/images/voice_actors/Hyuna-profile.png" alt="Hyuna">
+                    <h3>HYUNA</h3>
                     <p>VOICED BY 6FU;</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <img src="assets/images/STUDIOLICO.png" alt="Studio Lico">
+        <img id="footer-logo" src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico">
         <div class="footer-contacts">
             <a class="footer-buttons" target="_blank"><img src="assets/images/icons/website icon.jpg" alt="Studio Lico Website"></a>
             <a class="footer-buttons" target="_blank"><img src="assets/images/icons/yt logo.png" alt="Studio Lico YouTube"></a>
@@ -93,8 +96,8 @@
             </ul>
         </div>
         <hr>
-        <p class="coppyright-text">© 2025 All Rights Reserved. Designed by Margielyn Atienza</p>
+        <p class="copyright-text">© 2025 ALL RIGHTS RESERVED. DESIGNED BY MARGIELYN ATIENZA</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
