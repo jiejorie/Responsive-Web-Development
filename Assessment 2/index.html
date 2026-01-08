@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/icons/Logo.ico" type="image/x-icon">
     <title>Alien Stage</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="assets/images/ALNST_Logo.png" alt="Alien Stage Logo">
+            <img src="assets/images/icons/ALNST_Logo.png" alt="Alien Stage Logo">
             <button type="button" class="watch-Btn" id="watch-yt1">
-                    <a
-                        href="https://youtube.com/playlist?list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&si=KNCjxF_dGgh8bD0a"
-                        target="_blank">
-                        WATCH ON YOUTUBE
-                    </a>
+                <a
+                    href="https://youtube.com/playlist?list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&si=KNCjxF_dGgh8bD0a"
+                    target="_blank">
+                    WATCH ON YOUTUBE
+                </a>
             </button>
             <div class="main-menu">
-                <button type="button" class="menu-Btn" onclick=""><img src="assets/images/icons/menu.png" alt="menu"
-                        height="30px"></button>
-                <button type="button" class="close-Btn" onclick=""><img src="assets/images/icons/close.png" alt="close"
-                        height="30px"></button>
-                <ul>
+                <button type="button" class="menu-Btn" onclick="openMenu()"><img src="assets/images/icons/menu.png" alt="menu"
+                        height=30px></button>
+                <button type="button" class="close-Btn" onclick="closeMenu()"><img src="assets/images/icons/close.png" alt="close"
+                        height=30px></button>
+                <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="creators.html">CREATORS</a></li>
-                    <li><a href="#about-contents">ABOUT</a></li>
-                    <li><a href="#all-rounds">SONGS</a></li>
+                    <li><a href="#about-contents" onclick="closeMenu()">ABOUT</a></li>
+                    <li><a href="#all-rounds" onclick="closeMenu()">SONGS</a></li>
                     <li><a href="cast.html">CAST</a></li>
-                    <li><a href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
+                    <li><a target="_blank" href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
                 </ul>
             </div>
         </nav>
         <div class="image-overlay-cont">
-            <img src="assets/images/display/phoneHeader3.png" alt="Alien Stage Background" class="header-bg">
-            <div class="overlay-text">
+            <div class="overlay-text1">
                 <h1>ALIEN STAGE</h1>
                 <button type="button" class="watch-Btn" id="watch-yt2">
                     <a
@@ -59,146 +59,212 @@
         <section id="about-contents">
             <h2>ABOUT</h2>
             <p>
-                Alien Stage, a reality audition program, has taken the alien world by storm, and its upcoming season is
-                planned to be just as exciting. Contestants must sing for their survival, as the loser faces on-the-spot
-                termination. As the competition heats up, a mysterious girl emerges, whose involvement may hold the key
-                to humanity's fate...
+                ALIEN STAGE, A REALITY AUDITION PROGRAM, HAS TAKEN THE ALIEN WORLD BY STORM, AND ITS UPCOMING SEASON IS
+                PLANNED TO BE JUST AS EXCITING. CONTESTANTS MUST SING FOR THEIR SURVIVAL, AS THE LOSER FACES ON-THE-SPOT
+                TERMINATION. AS THE COMPETITION HEATS UP, A MYSTERIOUS GIRL EMERGES, WHOSE INVOLVEMENT MAY HOLD THE KEY
+                TO HUMANITY'S FATE...
             </p>
         </section>
         <section id="all-rounds">
             <h2>EPISODES: ALL ROUNDS</h2>
-            <button type="button" class="rounds" id="round1">
-                <a 
-                href="https://www.youtube.com/watch?v=qQlVtAiFARI&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=1&pp=iAQB8AUB"
-                target="_blank">
-                <img src="assets/images/rounds/AS_round1.jpg" alt="Round 1">
-                <h3>[ROUND 1]</h3>
-                <p>OH MY CLEMATIS</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
-            <button type="button" class="rounds" id="round2">
-                <a 
-                href="https://www.youtube.com/watch?v=BEEp4WBaD7w&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=3&pp=iAQB8AUB"
-                target="_blank">
-                <img src="assets/images/rounds/AS_round2.jpg" alt="Round 2">
-                <h3>[ROUND 2]</h3>
-                <p>UNKNOWN (TILL THE END...)</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
-            <button type="button" class="rounds" id="round3">
-                <a 
-                href="https://www.youtube.com/watch?v=2cFnfD4iZzM&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=4&pp=iAQB8AUB"
-                target="_blank">
-                <img src="assets/images/rounds/AS_round3.jpg" alt="Round 3">
-                <h3>[ROUND 3]</h3>
-                <p>BLACK SORROW</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
-            <button type="button" class="rounds" id="round5">
-                <a 
-                href="https://www.youtube.com/watch?v=VgPo3q01kbg&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=5&pp=iAQB8AUB"
-                target="_blank">
-                <img src="assets/images/rounds/" alt="Round 5">
-                <h3>[ROUND 5]</h3>
-                <p>RULER OF MY HEART</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
-            <button type="button" class="rounds" id="round6">
-                <a 
-                href="https://www.youtube.com/watch?v=SV9SwKd6J3w&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=9&pp=iAQB8AUB0gcJCU0KAYcqIYzv"
-                target="_blank">
-                <img src="assets/images/rounds/" alt="Round 6">
-                <h3>[ROUND 6]</h3>
-                <p>CURE</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
-            <button type="button" class="rounds" id="final-round">
-                <a 
-                href="https://www.youtube.com/watch?v=4Dr7HljrsoQ&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=10&pp=iAQB8AUB"
-                target="_blank">
-                <img src="assets/images/rounds/" alt="Final Round">
-                <h3>[FINAL]</h3>
-                <p>BLINK GONE</p>
-                <img src="assets/images/icons/play_symbol.png" alt="play">
-                </a>
-            </button>
+            <div id="rounds-cont">
+                <button type="button" class="rounds" id="round1">
+                    <a 
+                    href="https://www.youtube.com/watch?v=qQlVtAiFARI&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=1&pp=iAQB8AUB"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img src="assets/images/rounds/AS_round1.jpg" alt="Round 1">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[ROUND 1]</h3>
+                        <p>OH MY CLEMATIS</p>
+                        <p class="singers">C!NAH, RUBYEYE</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+                <button type="button" class="rounds" id="round2">
+                    <a 
+                    href="https://www.youtube.com/watch?v=BEEp4WBaD7w&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=3&pp=iAQB8AUB"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img class="rounds-cover" src="assets/images/rounds/AS_round2.jpg" alt="Round 2">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[ROUND 2]</h3>
+                        <p>UNKNOWN (TILL THE END...)</p>
+                        <p class="singers">AKUGETSU, RUBYEYE</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+                <button type="button" class="rounds" id="round3">
+                    <a 
+                    href="https://www.youtube.com/watch?v=2cFnfD4iZzM&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=4&pp=iAQB8AUB"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img class="rounds-cover" src="assets/images/rounds/AS_round3.jpg" alt="Round 3">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[ROUND 3]</h3>
+                        <p>BLACK SORROW</p>
+                        <p class="singers">PARK BYEONG HOON</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+                <button type="button" class="rounds" id="round5">
+                    <a 
+                    href="https://www.youtube.com/watch?v=VgPo3q01kbg&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=5&pp=iAQB8AUB"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img class="rounds-cover" src="assets/images/rounds/AS_round5.jpg" alt="Round 5">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[ROUND 5]</h3>
+                        <p>RULER OF MY HEART</p>
+                        <p class="singers">BL8M, RUBYEYE</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+                <button type="button" class="rounds" id="round6">
+                    <a 
+                    href="https://www.youtube.com/watch?v=SV9SwKd6J3w&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=9&pp=iAQB8AUB0gcJCU0KAYcqIYzv"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img class="rounds-cover" src="assets/images/rounds/AS_round6.jpg" alt="Round 6">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[ROUND 6]</h3>
+                        <p>CURE</p>
+                        <p class="singers">AKUGETSU, PARK BYEONG HOON</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+                <button type="button" class="rounds" id="final-round">
+                    <a 
+                    href="https://www.youtube.com/watch?v=4Dr7HljrsoQ&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=10&pp=iAQB8AUB"
+                    target="_blank">
+                    <div class="rounds-cover">
+                        <img class="rounds-cover" src="assets/images/rounds/AS_final.jpg" alt="Final Round">
+                    </div>
+                    <div class="rounds-info">
+                        <h3>[FINAL]</h3>
+                        <p>BLINK GONE</p>
+                        <p class="singers">BL8M, RUBYEYE</p>
+                        <img class="play-symbol" src="assets/images/icons/play_symbol.png" alt="play">
+                    </div>
+                    </a>
+                </button>
+            </div>
         </section>
         <section id="more-music">
-            <h2>MORE MUSIC</h2>
+            <h2>MORE MUSIC...</h2>
             <div class="gallery-wrap">
                 <button type="button" id="back-Btn"><img src="assets/images/icons/left_arrow.png"></button>
                 <!-- the gallery class contains two separate divs to smoothly switch between 2 sets of images, each containing 3 clickable image links -->
                 <div class="gallery">
-                    <div>
-                        <button type="button" class="more" id="prologue">
+                    <div class="gallery-slide">
+                        <button type="button" class="more-songs" id="prologue">
                             <a 
-                            href=""
+                            href="https://www.youtube.com/watch?v=vYikmsPVq_c&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=2&pp=iAQB8AUB"
                             target="_blank">
-                            <img src="assets/images/rounds/AS_prologue.jpg" alt="Prologue">
-                            <h3>PROLOGUE</h3>
-                            <p>SWEET DREAM</p>
-                            <img src="assets/images/icons/play_symbol.png" alt="play">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_prologue.jpg" alt="Prologue">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>PROLOGUE</h3>
+                                <p>SWEET DREAM</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
                             </a>
                         </button>
-                        <button type="button" class="more" id="prequel">
+                        <button type="button" class="more-songs" id="top3">
                             <a 
-                            href=""
+                            href="https://www.youtube.com/watch?v=0XGAV1weF00&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=6&pp=iAQB8AUB0gcJCU0KAYcqIYzv"
                             target="_blank">
-                            <img src="assets/images/rounds/AS_mizisuaimg.jpg" alt="Prequel">
-                            <h3>PREQUEL</h3>
-                            <p>MIZISUA</p>
-                            <img src="assets/images/icons/play_symbol.png" alt="play">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_top3img.jpg" alt="Post-Round 5">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>TOP 3</h3>
+                                <p>DANGEROUS</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
                             </a>
-                        </button>
-                        <button type="button" class="more" id="post-round5">
+                        </button> 
+                        <button type="button" class="more-songs" id="prequel">
                             <a 
-                            href=""
+                            href="https://www.youtube.com/watch?v=BiD7u0Svsvk&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=7&pp=iAQB8AUB"
                             target="_blank">
-                            <img src="assets/images/rounds/AS_allin.jpg" alt="Post-Round 5">
-                            <h3>POST-ROUND 5</h3>
-                            <p>ALL-IN</p>
-                            <img src="assets/images/icons/play_symbol.png" alt="play">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_mizisuaimg.jpg" alt="Prequel">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>PREQUEL</h3>
+                                <p>MIZISUA</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
                             </a>
-                        </button>                      
+                        </button>         
                     </div>
-                    <div>
-                        <button type="button" class="more" id="post-final">
+                    <div class="gallery-slide">
+                        <button type="button" class="more-songs" id="post-round5">
                             <a 
-                            href=""
+                            href="https://www.youtube.com/watch?v=DIaeHN3sNtk&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=8&pp=iAQB8AUB"
                             target="_blank">
-                            <img src="assets/images/rounds/AS_wiege.jpg" alt="Post-Final">
-                            <h3>POST-FINAL</h3>
-                            <p>WIEGE</p>
-                            <img src="assets/images/icons/play_symbol.png" alt="play">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_allin.jpg" alt="Post-Round 5">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>POST-ROUND 5</h3>
+                                <p>ALL-IN</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
+                            </a>
+                        </button>       
+                        <button type="button" class="more-songs" id="post-final">
+                            <a 
+                            href="https://www.youtube.com/watch?v=rrngM9DmDfk&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=11&pp=iAQB8AUB"
+                            target="_blank">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_wiege.jpg" alt="Post-Final">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>POST-FINAL</h3>
+                                <p>WIEGE</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
                             </a>
                         </button>
-                        <button type="button" class="more" id="ending">
+                        <button type="button" class="more-songs" id="ending">
                             <a 
-                            href=""
+                            href="https://www.youtube.com/watch?v=e8lSYc3WvJ8&list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&index=12&pp=iAQB8AUB"
                             target="_blank">
-                            <img src="assets/images/rounds/AS_karma.jpg" alt="Ending">
-                            <h3>ENDING</h3>
-                            <p>KARMA</p>
-                            <img src="assets/images/icons/play_symbol.png" alt="play">
+                            <div class="more-music-cover">
+                                <img src="assets/images/rounds/AS_karma.jpg" alt="Ending">
+                            </div>
+                            <div class="more-music-info">
+                                <h3>ENDING</h3>
+                                <p>KARMA</p>
+                                <img class="play-symbol2" src="assets/images/icons/play_symbol.png" alt="play">
+                            </div>
                             </a>
                         </button>
                    </div>
                 </div>
-                <button type="button" id="nex-tBtn"><img src="assets/images/icons/right_arrow.png"></button>
+                <button type="button" id="next-Btn"><img src="assets/images/icons/right_arrow.png"></button>
             </div> 
         </section>
     </main>
     <footer>
-        <img src="assets/images/STUDIOLICO.png" alt="Studio Lico">
+        <img id="footer-logo" src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico">
         <div class="footer-contacts">
-            <a class="footer-buttons" target="_blank"><img src="assets/images/icons/website icon.jpg" alt="Studio Lico Website"></a>
-            <a class="footer-buttons" target="_blank"><img src="assets/images/icons/yt logo.png" alt="Studio Lico YouTube"></a>
-            <a class="footer-buttons" target="_blank"><img src="assets/images/icons/instagram logo.jpg" alt="Studio Lico Instagram"></a>
+            <a class="footer-buttons" target="_blank" href="https://www.studiolico.com/"><img src="assets/images/icons/website icon.jpg" alt="Studio Lico Website"></a>
+            <a class="footer-buttons" target="_blank" href="https://www.youtube.com/@STUDIOLICO"><img src="assets/images/icons/yt logo.png" alt="Studio Lico YouTube"></a>
+            <a class="footer-buttons" target="_blank" href="https://www.instagram.com/studiolico/"><img src="assets/images/icons/instagram logo.jpg" alt="Studio Lico Instagram"></a>
         </div>
         <div class="footer-links">
             <ul>
@@ -207,13 +273,13 @@
                 <li><a href="#about-contents">ABOUT</a></li>
                 <li><a href="#all-rounds">SONGS</a></li>
                 <li><a href="cast.html">CAST</a></li>
-                <li><a href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
+                <li><a target="_blank" href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
             </ul>
         </div>
         <hr>
-        <p class="coppyright-text">© 2025 All Rights Reserved. Designed by Margielyn Atienza</p>
+        <p class="copyright-text">© 2025 ALL RIGHTS RESERVED. DESIGNED BY MARGIELYN ATIENZA</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
