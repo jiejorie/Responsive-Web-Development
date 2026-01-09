@@ -7,7 +7,6 @@ let backComputedStyle = window.getComputedStyle(backBtn);
 let nextComputedStyle = window.getComputedStyle(nextBtn);
 
 
-if (nextComputedStyle.display !== 'none' && backComputedStyle.display !== 'none') {
     // Adding an event listener with the "wheel" event
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
@@ -25,7 +24,7 @@ backBtn.addEventListener("click", () => {
     scrollContainer.style.scrollBehavior = "smooth";
     scrollContainer.scrollLeft -= 460;
 })
-}
+
 
 function openMenu() {
     let menu = document.querySelector('.menu');
