@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/images/icons/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!-- Links external stylesheet -->
+    <link rel="icon" href="assets/images/icons/Logo.ico" type="image/x-icon"> <!-- Sets document icon -->
     <title>• Creators</title>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
+
+        <!-- Navigation bar -->
         <nav>
-            <img src="assets/images/icons/ALNST_Logo.png" alt="Alien Stage Logo">
-            <button type="button" class="watch-Btn" id="watch-yt1">
-                <a
-                    href="https://youtube.com/playlist?list=PLQ-JZOYFII4dHqeSu6yeGj-30sZohX_oX&si=KNCjxF_dGgh8bD0a"
-                    target="_blank">
-                    WATCH ON YOUTUBE
-                </a>
-            </button>
+            <img class="header-logo" src="assets/images/icons/ALNST_Logo.png" alt="Alien Stage Logo" height="30px">
+            
+            <!-- Nav buttons and links -->
             <div class="main-menu">
-                <button type="button" class="menu-Btn" onclick="openMenu()"><img src="assets/images/icons/menu.png" alt="menu"
+
+                <!-- Menu Buttons -->
+                <button type="button" class="menu-btn" onclick="openMenu()"><img src="assets/images/icons/menu.png" alt="menu"
                         height=30px></button>
-                <button type="button" class="close-Btn" onclick="closeMenu()"><img src="assets/images/icons/close.png" alt="close"
+                <button type="button" class="close-btn" onclick="closeMenu()"><img src="assets/images/icons/close.png" alt="close"
                         height=30px></button>
+
+                <!-- Nav Links -->        
                 <ul class="menu">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="creators.html">CREATORS</a></li>
@@ -34,32 +36,50 @@
                     <li><a target="_blank" href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
                 </ul>
             </div>
-        </nav>
+
+            <!-- Nav Button -->
+            <button type="button" class="watch-btn" id="watch-yt-1" onclick="openYT()">
+                WATCH ON YOUTUBE
+            </button>
+        </nav> <!-- End of Navigation Bar -->
+
+        <!-- Overlay Container -->
         <div class="image-overlay-cont">
-            <div class="overlay-text2">
+            <!-- Contents to Overlay -->
+            <div class="overlay-text-2">
                 <h1>CREATORS</h1>
             </div>
         </div>
-    </header>
+
+    </header> <!-- End of Header Section -->
+
+    <!-- Main Content -->
     <main>
+
+        <!-- Creators Profiles Section -->
         <section>
             <h2>PROFILES</h2>
+
+            <!-- All Profiles Container -->
             <div class="profiles">
-                <article class="main-profile" id="profile1">
-                    <img src="assets/images/creators/vivinos.jpg" alt="Vivinos Profile">
+
+                <!-- Vivinos Profile -->
+                <article class="main-profile">
+                    <img src="assets/images/creators/vivinos.jpg" alt="Vivinos Profile" width="112px">
                     <h3>CREATOR NAME: VIVINOS</h3>
                     <p>VIVINOS (비비노스) IS THE DIRECTOR OF THE ALNST SERIES. THEY ARE A SOUTH KOREAN ARTIST, ANIMATOR,
                         AND YOUTUBER BORN ON FEBRUARY 5TH. SHE IS THE CREATOR OF ALIEN STAGE, PINK BITCH CLUB, AND
                         OTHER ANIMATED PROJECTS.</p>
                 </article>
-                <div class="contacts" id="contacts1">
+                <!-- Vivinos Contacts -->
+                <div class="contacts">
                     <h4>CONTACTS</h4>
                     <div class="contact-info">
                         <div class="contact-symbols">
-                            <img src="assets/images/icons/email.png" alt="Email icon">
-                            <img src="assets/images/icons/website icon.jpg" alt="Website icon">
-                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon"> 
-                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon"> 
+                            <img src="assets/images/icons/email.png" alt="Email icon" width="24px">
+                            <img src="assets/images/icons/website icon.jpg" alt="Website icon" width="24px">
+                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon" width="24px"> 
+                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon" width="24px"> 
                         </div>
                         <div class="contact-texts">
                             <p>VIVINOS162@GMAIL.COM</p>
@@ -69,21 +89,24 @@
                         </div>
                     </div>
                 </div>
-                <article class="main-profile" id="profile2">
-                    <img src="assets/images/creators/QMENG.png" alt="Qmeng Profile">
+
+                <!-- Qmeng Profile -->
+                <article class="main-profile">
+                    <img src="assets/images/creators/QMENG.png" alt="Qmeng Profile" width="112px">
                     <h3>CREATOR NAME: QMENG</h3>
                     <p>QMENG IS THE CO-DIRECTOR AND A KEY CREATIVE FORCE BEHIND THE ALIEN STAGE SERIES, WORKING
                         ALONGSIDE VIVINOS. WHILE VIVINOS IS OFTEN CREDITED AS THE LEAD DIRECTOR, QMENG'S
                         CONTRIBUTIONS ARE SIGNIFICANT, PARTICULARLY IN ANIMATION, WHERE SHE IS LISTED AS A
                         CO-DIRECTOR AND KEY-FRAME ANIMATOR ON MANY OF THE MUSIC VIDEOS.</p>
                 </article>
-                <div class="contacts" id="contacts2">
+                <!-- Qmeng Contacts -->
+                <div class="contacts">
                     <h4>CONTACTS</h4>
                     <div class="contact-info">
                         <div class="contact-symbols">
-                            <img src="assets/images/icons/email.png" alt="Email icon">
-                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon"> 
-                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon"> 
+                            <img src="assets/images/icons/email.png" alt="Email icon" width="24px">
+                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon" width="24px"> 
+                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon" width="24px"> 
                         </div>
                         <div class="contact-texts">
                             <p>QMENGSSS@GMAIL.COM</p>
@@ -92,22 +115,25 @@
                         </div>
                     </div>
                 </div>
-                <article class="main-profile" id="profile3">
-                    <img src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico Profile">
+
+                <!-- Studio Lico Profile -->
+                <article class="main-profile" id="profile-3">
+                    <img src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico Profile" width="112px">
                     <h3>STUDIO: STUDIO LICO</h3>
                     <p>STUDIO LICO IS THE PRODUCER OF ALIEN STAGE, BRINGING THE ANIMATED WEB SERIES CREATED BY
                         VIVINOS AND QMENG TO LIFE. ADDITIONALLY, THEY AID THE MUSIC PRODUCTION BEHIND THE SERIES’S
                         SOUND DESIGN. THEY ARE ALSO IN-CHARGE OF RELEASING EXTRA SUPPLEMENTARY CONTENT REGARDING
                         ALIEN STAGE.</p>
                 </article>
-                <div class="contacts" id="contacts3">
+                <!-- Studio Lico Contacts -->
+                <div class="contacts">
                     <h4>CONTACTS</h4>
                     <div class="contact-info">
                         <div class="contact-symbols">
-                            <img src="assets/images/icons/email.png" alt="Email icon">
-                            <img src="assets/images/icons/website icon.jpg" alt="Website icon">
-                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon"> 
-                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon"> 
+                            <img src="assets/images/icons/email.png" alt="Email icon" height="30px">
+                            <img src="assets/images/icons/website icon.jpg" alt="Website icon" height="30px">
+                            <img src="assets/images/icons/yt logo.png" alt="YouTube icon" height="30px"> 
+                            <img src="assets/images/icons/instagram logo.jpg" alt="Instagram icon" height="30px"> 
                         </div>
                         <div class="contact-texts">
                             <p>DL_LICO_QNA@STUDIOLICO.COM</p>
@@ -117,19 +143,27 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+
+            </div> <!-- End of All Profiles Container -->
+        </section> <!-- End of Creator Profiles Section -->
+
+    </main> <!-- End of Main Content -->
+
+    <!-- Footer Section -->
     <footer>
-        <img id="footer-logo" src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico">
+        <img id="footer-logo" src="assets/images/creators/STUDIOLICO.png" alt="Studio Lico" width="288px">
+        
+        <!-- Clickable Icon Contacts -->
         <div class="footer-contacts">
             <a class="footer-buttons" target="_blank"><img src="assets/images/icons/website icon.jpg"
-                    alt="Studio Lico Website"></a>
+                    alt="Studio Lico Website" height="24px"></a>
             <a class="footer-buttons" target="_blank"><img src="assets/images/icons/yt logo.png"
-                    alt="Studio Lico YouTube"></a>
+                    alt="Studio Lico YouTube" height="24px"></a>
             <a class="footer-buttons" target="_blank"><img src="assets/images/icons/instagram logo.jpg"
-                    alt="Studio Lico Instagram"></a>
+                    alt="Studio Lico Instagram" height="24px"></a>
         </div>
+        
+        <!-- Footer Links -->
         <div class="footer-links">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -140,9 +174,14 @@
                 <li><a target="_blank" href="https://alienstage.fandom.com/wiki/ALIEN_STAGE_Wiki">WIKI</a></li>
             </ul>
         </div>
+        
+        <!-- Copyright Information -->
         <hr>
         <p class="copyright-text">© 2025 ALL RIGHTS RESERVED. DESIGNED BY MARGIELYN ATIENZA</p>
-    </footer>
+    
+    </footer> <!-- End of Footer Section -->
+
+    <!-- Link to External JavaScript -->
     <script src="script.js"></script>
 </body>
 
